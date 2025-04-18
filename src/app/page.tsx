@@ -6,6 +6,13 @@ export default function Home() {
         <p className = "text-xl">A React developer learning Next.js</p>
       </div>
 
+      <div>
+        <img
+          src = "/images/68DF3F75-A761-4820-9EDD-D8746252EF9D_1_105_c.jpeg"
+          alt = "Black and white mountains picture"
+        />
+      </div>
+
       <div className = "mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
         <div className = "group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100">
           <h2 className="mb-3 text-2xl font-semibold">About</h2>
