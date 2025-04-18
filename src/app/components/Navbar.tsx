@@ -14,6 +14,21 @@ export default function Navbar() {
           My Portfolio
           </Link>
         </div>
+
+        <div className="flex items-center space-x-4">
+          <Link
+            href = "/"
+            className={`${
+              pathname === '/'
+              ? 'text-white'
+              : 'text-gray-300 hover:text-white'
+            }`}
+          >
+            Home
+          </Link>
+        </div>
+
+        
       </div>
     </nav>
   )
