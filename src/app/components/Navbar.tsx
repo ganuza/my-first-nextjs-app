@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { withRouter } from 'next/router'
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -26,9 +27,27 @@ export default function Navbar() {
           >
             Home
           </Link>
+          <Link
+            href = "/about"
+            className={`${
+              pathname === '/about'
+              ? 'text-white'
+              : 'text-gray-300 hover:text-white'
+            }`}
+          >
+            About
+          </Link>
+          <Link
+            href = "/projects"
+            className={`${
+              pathname === '/projects'
+              ? 'text-white'
+              : 'text-gray-300 hover:text-white'
+            }`}
+          >
+            Projects
+          </Link>
         </div>
-
-        
       </div>
     </nav>
   )
