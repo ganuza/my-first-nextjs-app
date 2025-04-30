@@ -47,6 +47,16 @@ export default function Navbar() {
           >
             Projects
           </Link>
+          <Link
+            href = "/error-test"
+            className={`${
+              pathname === 'error-test'
+              ? 'text-gray-300'
+              : 'text-gray-600 hover:text-black'
+            }`}
+            >
+              Test Error
+            </Link>
         </div>
       </div>
     </nav>
